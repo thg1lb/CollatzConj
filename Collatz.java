@@ -1,14 +1,17 @@
-import java.lang.Math;
-import java.util.Random;
+import java.util.Scanner;
 
 
 public class Collatz
 {
-    //defining variables
-    public static int ogNumber = 1;
-    public static int num = ogNumber;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
+        //opening scanner
+        Scanner in = new Scanner(System.in);
+
+        //user input
+        System.out.print("Please enter a whole number >> ");
+        int num = in.nextInt();
 
         //checks if number is even
         while(num != 1){
